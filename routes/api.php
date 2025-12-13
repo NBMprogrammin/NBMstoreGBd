@@ -3,6 +3,10 @@ use App\Http\Controllers\FrountEndController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/user', function (Request $request) {
+    return $request->user();
+})->middleware('auth:sanctum');
+
 Route::post('/cod-email-register', [FrountEndController::class, 'sendcodtocreatenewaccounte']);
 
 Route::post('/cod-shange-email', [FrountEndController::class, 'starttoshangeemailprofile'])->middleware('auth:sanctum');
