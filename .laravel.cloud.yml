@@ -1,0 +1,7 @@
+build:
+  - "composer install --no-ansi --no-interaction --no-progress --optimize-autoloader"
+  - "php artisan optimize:clear"
+
+deploy:
+  - "php artisan migrate --force"
+  - "php artisan storage:link"
