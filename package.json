@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "name": "laravel-api",
+    "version": "1.0.0",
+    "description": "Laravel API Backend",
+    "scripts": {
+        "build": "echo '✅ Backend API - No frontend build required' && exit 0",
+        "start": "echo '🚀 API Server is running' && exit 0",
+        "dev": "echo '🔧 Development mode'",
+        "prod": "echo '⚡ Production mode'",
+        "test": "echo '🧪 No tests configured' && exit 0",
+        "lint": "echo '✨ No linting needed'",
+        "clean": "echo '🧹 Cleaning...' && rm -rf node_modules 2>/dev/null || true"
+    },
+    "devDependencies": {
+        "axios": "^1.7.4"
+    },
+    "engines": {
+        "node": ">=14.0.0",
+        "npm": ">=6.0.0"
+    }
+}
